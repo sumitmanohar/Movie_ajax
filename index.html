@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12">
+            <h1>Movies</h1>
+          </div>
+        </div>
+
+
+          <div class=row>
+          <div class="col-12">
+    <select name="movies" id="mySelect"  class="list-topic">
+      <option></option>
+    <option value="title" id="title">title</option>
+    <option value="year" id="year">year</option>
+    <option value="imbid" id="imbid">imbid</option>
+   </select>
+         </div>
+          </div>
+
+
+
+
+
+ <div id="text-title" style="display: none;">
+            <div class="container" style="display: flex;justify-content: center;">
+          <div class="row">
+            <div class="col-12">
+        <div class="input-group mb-2">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">title</span>
+  </div>
+  <input type="text" id="first" class="form-control" placeholder="title" aria-label="Username" aria-describedby="basic-addon1">
+</div><br>
+        <button class="btn btn-primary" id="title1" data-toggle="modal" style="color: black;" data-target="#exampleModal" style="margin-bottom: 10px;">Search</button>
+      </div>
+    </div>
+    </div>
+  </div>
+      <div id="text-year" style="display: none;">
+            <div class="container" style="display: flex;justify-content: center;">
+          <div class="row">
+            <div class="col-12">
+        <div class="input-group mb-2">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">year</span>
+  </div>
+  <input type="text" id="second" class="form-control" placeholder="year" aria-label="Username" aria-describedby="basic-addon1">
+</div><br>
+        <button class="btn btn-primary" id="year1" data-toggle="modal" style="color: black;" data-target="#exampleModal" style="margin-bottom: 10px;">Search</button>
+      </div>
+    </div>
+    </div>
+  </div>
+ <div id="text-imbid" style="display: none;">
+            <div class="container" style="display: flex;justify-content: center;">
+          <div class="row">
+            <div class="col-12">
+        <div class="input-group mb-2">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">imbid</span>
+  </div>
+  <input type="text" id="third" class="form-control" placeholder="imbid" aria-label="Username" aria-describedby="basic-addon1">
+</div><br>
+        <button class="btn btn-primary" id="imbid1" data-toggle="modal" style="color: black;" data-target="#exampleModal" style="margin-bottom: 10px;">Search</button>
+      </div>
+    </div>
+    </div>
+  </div>
+     </div>
+      </div>
+    </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" style="display: none;" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div class="container  text-center">
+        <div class="row">
+      <div id="err"></div>
+      <div id="img"></div>
+      <div id="set">
+        
+      <p id="writer" ></p>
+      <p id="actor"></p>
+      <p id="award" ></p>
+      <p id="rate1" ></p>
+      <p id="rate2" ></p>
+      <p id="rate3" ></p>
+      <p id="plot" ></p>
+      <p id="imdbRating" ></p>
+      <p id="imdbVotes" ></p>
+      <p id="imdbid" ></p>
+      <p id="year2017" ></p>
+      <p id="country" ></p>
+      <p id="boxoffice" ></p>
+      <p id="Metascore" ></p>
+      <p id="Language" ></p>
+      <p id="Production" ></p>
+      <p id="Director" ></p>
+      <p id="Rated" ></p>
+      <p id="Released" ></p>
+      <p id="Website" ></p>
+      <p id="Poster"></p>
+    </div>
+     </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+:root{
+font-size: 15px;
+}
+body{
+	padding: 0;
+	margin: 0;
+	background: url(images/back5.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+	font-family: 'Anton', sans-serif;
+
+}
+/*h1{
+	color:#535c68;
+}*/
+#err > i{
+	
+	color:black;
+	font-size: 5rem; 
+}
+.modal-body .container .row{
+	display: flex;
+	justify-content: center;
+}
+#main{
+	background-color:#192a56;
+
+	width: 60%;
+
+
+}
+.card-header{
+	background-color: #00a8ff;
+}
+
+
+#mySelect{
+	width: 50%;
+	height: 40%;
+	margin-bottom: 50px;
+	padding: 4px;
+	background-color:#7f8fa6;
+}
+.form-control{
+	background-color:#7f8fa6;
+
+}
+.input-group-text{
+	background-color: #7f8fa6;
+}
+.img-size{
+	width:100%;
+
+}
+
+
+.btn{
+	margin-bottom: 10px;
+}
+.link{
+	text-decoration: none;
+	color: black;
+}
+.link:hover{
+	text-decoration: none;
+	color: black;
+}
+#set{
+	width: 95%;
+	display: none;
+}
+
+
+@media screen and (max-width: 950px){
+	#mySelect{
+		width: 65%;
+	}
+	#main{
+	
+	width: 80%;
+}
+
+
+}
+@media screen and (max-width: 475px){
+	#mySelect{
+		width: 85%;
+	}
+}
